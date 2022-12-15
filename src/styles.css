@@ -50,14 +50,34 @@ header a {
   display: inline-block;
   margin-top: 32px;
 }
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+.section-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/Lady-gaga-photo-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-2 h2,
+.section-2 h3 {
+  color: white;
+  text-align: center;
+}
+.section-2 h2 {
+  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100px;
+  margin: 0 auto 20px;
 }
 
 main {
@@ -77,6 +97,18 @@ main h3 {
   font-size: 42px;
   line-height: 1;
   color: #121212;
+  margin: 0;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
 }
 main p {
@@ -119,6 +151,7 @@ footer li a {
 
 .img-responsive {
   width: 100%;
+  display: block;
 }
 
 .grid {
@@ -128,11 +161,40 @@ footer li a {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-3-columns-with-1-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 .grid-item {
   padding: 100px 100px 100px 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+.card-body {
+  padding: 30px;
+}
+.card-header img {
+  border-radius: 15px 15px 0 0;
+}
+.btn {
+  display: block;
+  color: white;
+  background-color: #121212;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px;
 }
 
 @media (max-width: 900px) {
