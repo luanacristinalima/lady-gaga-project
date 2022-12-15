@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Impac";
+  src: url(/Font/impact.ttf) format("truetype");
+}
+h1 {
+  font-family: "Impact", sans-serif;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 171px;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+}
