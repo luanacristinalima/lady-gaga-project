@@ -180,8 +180,12 @@ footer li a {
 .card-body {
   padding: 30px;
 }
-.card-header img {
+.card-header .video {
   border-radius: 15px 15px 0 0;
+}
+.video {
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 .btn {
   display: block;
