@@ -7,6 +7,7 @@ body {
   font-family: "Oswald", sans-serif;
   background-color: #121212;
 }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/Hero-photo.png);
@@ -56,6 +57,33 @@ header a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
+}
+
+main {
+  background-color: white;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #121212;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+main h3 {
+  font-family: "Impact", sans-serif;
+  font-size: 42px;
+  line-height: 1;
+  color: #121212;
+  margin: 0;
+}
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.8;
 }
 
 footer {
@@ -65,7 +93,6 @@ footer {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 50px 0;
 }
 footer ul {
   padding: 0;
@@ -89,10 +116,23 @@ footer li a {
   line-height: 1.5;
   opacity: 0.8;
 }
-.footer-grid {
+
+.img-responsive {
+  width: 100%;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 20px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-with-1-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-item {
+  padding: 100px 100px 100px 30px;
 }
 
 @media (max-width: 900px) {
@@ -107,5 +147,13 @@ footer li a {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  section,
+  .grid-item {
+    padding: 30px 15px;
   }
 }
