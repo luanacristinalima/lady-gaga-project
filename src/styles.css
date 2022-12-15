@@ -68,10 +68,12 @@ section {
   background-position: center;
 }
 
+.text-center {
+  text-align: center;
+}
 .section-2 h2,
 .section-2 h3 {
   color: white;
-  text-align: center;
 }
 .section-2 h2 {
   opacity: 0.6;
@@ -163,6 +165,7 @@ footer li a {
 }
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
 }
 .grid-3-columns-with-1-narrow {
   grid-template-columns: 1fr 2fr 2fr;
@@ -175,7 +178,6 @@ footer li a {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
 }
 .card-body {
   padding: 30px;
@@ -187,6 +189,12 @@ footer li a {
   width: 100%;
   aspect-ratio: 16/9;
 }
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+}
+
 .btn {
   display: block;
   color: white;
@@ -221,5 +229,8 @@ footer li a {
   section,
   .grid-item {
     padding: 30px 15px;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
