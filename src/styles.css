@@ -189,7 +189,6 @@ footer a {
   width: 100%;
   aspect-ratio: 16/9;
 }
-
 .photo {
   filter: brightness(73%) grayscale(126%);
 }
