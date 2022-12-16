@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Impac";
-  src: url(/Font/impact.ttf) format("truetype");
+  src: url(../Font/impact.ttf) format("truetype");
 }
 
 body {
@@ -145,7 +145,7 @@ footer p {
   font-weight: 400;
   opacity: 0.8;
 }
-footer li a {
+footer a {
   color: white;
   line-height: 1.5;
   opacity: 0.8;
@@ -182,17 +182,16 @@ footer li a {
 .card-body {
   padding: 30px;
 }
-.card-header .video {
+.card-header .embed {
   border-radius: 15px 15px 0 0;
-}
-.video {
-  width: 100%;
-  aspect-ratio: 16/9;
 }
 .embed {
   width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 15px;
+  aspect-ratio: 16/9;
+}
+
+.photo {
+  filter: brightness(73%) grayscale(126%);
 }
 
 .btn {
@@ -207,6 +206,54 @@ footer li a {
   text-transform: uppercase;
   text-decoration: none;
   padding: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table h4 {
+  color: white;
+}
+table thead tr {
+  height: 60px;
+  background: #121212;
+}
+table tbody tr {
+  height: 50px;
+  text-align: center;
+}
+tbody tr {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+tbody tr:hover {
+  color: #555;
+  background-color: #f5f5f5;
+}
+tbody td:first-child {
+  max-width: 200px;
+}
+.img-cover {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -226,11 +273,63 @@ footer li a {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+  .grid-item {
+    text-align: center;
+  }
   section,
   .grid-item {
     padding: 30px 15px;
   }
-  .embed {
-    aspect-ratio: 16/9;
+  .photo {
+    display: none;
+  }
+
+  table,
+  table > *,
+  table tr,
+  table td,
+  table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40%;
+    margin-bottom: 24px;
+  }
+  tbody td:first-child {
+    max-width: 100%;
+  }
+  .img-cover {
+    width: 20%;
+    height: 20%;
+  }
+  table tbody tr td:before {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.2;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Cover/Poster";
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Title";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Release";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Type";
   }
 }
